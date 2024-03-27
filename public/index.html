@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="black">
+    <title>Blaze Text to Speech Converter</title>
+    <link rel="shortcut icon" href="./assets/img/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+    <input type="file" name="text-file" id="file" class="file" accept=".txt" hidden/>
+    <div class="app">
+        <div class="app-head">
+            <p>
+                Blaze TTS
+            </p>
+        </div>
+        <div class="app-body">
+            <div class="info">
+                <p>
+                    A free text to speech converter
+                </p>
+            </div>
+            <div class="engine">
+                <label for="voice-engine">
+                    Select a voice
+                </label>
+                <select name="Voice-name" id="voice-engine" class="voice-name">
+                </select>
+            </div>
+            <div class="txt">
+                <label for="text">
+                    Enter your text below
+                </label>
+                <textarea name="text" spellcheck="false" id="text" class="text-input" placeholder="Example 'Hello World'"></textarea>
+            </div>
+            <div class="controls">
+                <div class="spd">
+                    <label for="speed">
+                        Speed
+                    </label>
+                    <input type="number" value="1" id="speed" class="speed-input" />
+                </div>
+                <button class="pause none">
+                    Pause
+                </button>
+                <button class="stop none">
+                    Stop
+                </button>
+            </div>
+            <button class="convert none">
+                Convert to Speech
+            </button>
+        </div>
+    </div>
+    <div class="bg hide">
+        <div class="bg-card hide down">
+            <div class="bg-head">
+                <p>
+                    Welcome
+                </p>
+                <span class="close">
+                    &times;
+                </span>
+            </div>
+            <div class="nxt">
+            </div>
+            <div class="gd">
+                <p>
+                    Want to read from a file?
+                    <br>
+                    Click the button below to select
+                </p>
+            </div>
+            <button class="choose">
+                Select file
+            </button>
+        </div>
+    </div>
+    <script defer src="./assets/js/render.js"></script>
+</body>
+</html>
