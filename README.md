@@ -2,9 +2,6 @@
 A free open source Text to Speech converter made in pure javascript and electron 
 |-------|
 
-# About
-
-This a free Text to speech converter
 
 # Installation
 Download it from the release section or just 
